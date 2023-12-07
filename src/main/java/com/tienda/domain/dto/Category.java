@@ -1,10 +1,14 @@
 package com.tienda.domain.dto;
 
+import java.util.List;
+
 public class Category {
 
     private int categoryId;
     private String description;
     private boolean active;
+
+    private List<Product> products;
 
     public int getCategoryId() {
         return categoryId;
@@ -28,5 +32,13 @@ public class Category {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    public List<Product> getProducts() {
+        return products;
+    }
+
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 }
